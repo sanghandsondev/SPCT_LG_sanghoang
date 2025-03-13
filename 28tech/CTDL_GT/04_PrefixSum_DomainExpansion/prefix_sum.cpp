@@ -17,6 +17,9 @@ using namespace std;
 // Mảng 2 chiều B[n][m] cho trước
 // prefix[i][j] = prefix[i-1][j] + prefix[i][j-1] - prefix[i-1][j-1] + B[i][j];
 
+// NOTE: Prefix sum rất hay thường được ứng dụng để giải bài toán liên quan đến Đệ quy hoặc ngược lại
+// NOTE: Liên quan đến lưu status hiện tại / trước đó cho việc quay lui / thỏa mãn điều kiện
+
 int main(){
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     int A[5] = {1, 3, 5, 7, 8};
