@@ -4,10 +4,13 @@ using namespace std;
 
 #define ull long long
 
+// ** NOTE: Stack thường ứng dụng vào các bài toán liên quan đến sự cân đối của mảng
+// ** NOTE: Ứng dụng thứ 2 đó là khi duyệt sẽ lưu các phần tử trước dó vào stack, đến khi phần tử hiện tại thỏa mãn điều kiện hoặc trigger gì đó
+            // --> Thực hiện 1 vòng lặp xét ngược lại các giá trị đã lưu vào stack để tính toán, sau đó pop chúng ra. Rồi tiếp tục duyệt đến cuối mảng
+
 // LIFO: Last in first out
 // push, pop, top, size, empty
-// O(1)
-// Bài toán: kiểm tra dấu ngoặc hợp lệ
+// ------------------ Bài toán: kiểm tra dấu ngoặc hợp lệ -----------------
 // Ví dụ: (()) ,  ()()   --> thỏa mãn
 //        ((()) ,  ()()) --> ko thỏa mãn; 
 // Hướng dẫn: Khi là '(' thì push vào stack, khi là ')' thì kiểm tra và pop nếu thỏa mãn
