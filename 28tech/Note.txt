@@ -2,15 +2,17 @@ Binary Search #20 ... <keep moving>
 
 Hàm đệ quy #25 ... <done>
 
-Thuật toán sinh kế tiếp  #29 #30
+Stack #31  .... <done>
 
-Stack #31  .... <learning>
-
-Queue #32
+Queue #32 ... <learning>
 
 Deque #33
 
 Priority Queue #34
+
+--------------
+
+Thuật toán sinh kế tiếp  #29 #30
 
 Kĩ thuật Sliding Window #35
 
@@ -20,6 +22,8 @@ Thuật toán quay lui  #47
 
 Bài tập mảng 2 chiều #9 #11.1 #11.2 #11.3
 
-BFS / DFS 
+BFS
+
+DFS
 
 Quy hoạch động
