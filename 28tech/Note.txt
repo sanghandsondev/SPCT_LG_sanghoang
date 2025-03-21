@@ -1,16 +1,23 @@
+
 Binary Search #20 ... <keep moving>
+    https://wiki.vnoi.info/algo/basic/Binary-Search
 
 Hàm đệ quy #25 ... <done>
 
 Stack #31  .... <done>
 
-Queue #32 ... <learning>
+Queue #32 ... <done>
 
-Deque #33
+Deque #33       <done>
 
-Priority Queue #34
+Priority Queue #34 <done>
 
---------------
+Map #16 <done>
+
+--------------------------------------------------------------------------------------
+
+Prefix sum
+    https://wiki.vnoi.info/algo/data-structures/prefix-sum-and-difference-array.md
 
 Thuật toán sinh kế tiếp  #29 #30
 
@@ -18,7 +25,7 @@ Kĩ thuật Sliding Window #35
 
 Kĩ thuật 2 con trỏ  #36
 
-Thuật toán quay lui  #47
+Thuật toán quay lui - Backtracking  #47
 
 Bài tập mảng 2 chiều #9 #11.1 #11.2 #11.3
 

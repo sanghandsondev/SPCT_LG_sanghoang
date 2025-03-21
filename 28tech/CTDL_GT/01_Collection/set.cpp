@@ -2,10 +2,19 @@
 using namespace std;
 using ll = long long;
 
-// Set là một container mà (mỗi phần tử trong đó là duy nhất) + (Tự động sắp xếp các phần tử trong theo thứ tự tăng dần)
-// insert, clear, empty, erase  -> O(logN)
-// size, find, count
+// -- Set là một container mà (mỗi phần tử trong đó là duy nhất) + (Tự động sắp xếp các phần tử trong theo thứ tự tăng dần)
 // ** Set không có chỉ số index do không phải dạng tuyến tính như mảng và vector ---> nó là dạng tree
+
+// insert(i): thêm phần tử, nếu chưa tồn tại thì tự động sắp xếp
+// clear(): xóa tất cả phần tử
+// empty(): 
+// size(): 
+// find(i): tìm ra vị trí iterator của phần tử có giá trị = i
+// count(i): tìm ra số lần xuất hiện của phần tử có giá trị = i
+
+// erase(i): xóa phần tử có giá trị = i
+// erase(it): xóa phần tử ở vị trí iterator = it
+
 
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
