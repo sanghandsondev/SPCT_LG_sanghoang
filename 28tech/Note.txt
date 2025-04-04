@@ -19,11 +19,17 @@ Map #16 <done>
 Prefix sum
     https://wiki.vnoi.info/algo/data-structures/prefix-sum-and-difference-array.md
 
+Kadane Algorithm (lưu status của phần tử phía trước rồi duyệt đến phần tử sau dựa vào status phần tử trước)
+    https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+
+Monotonic Stack (Priority_queue)
+    https://www.geeksforgeeks.org/how-to-identify-and-solve-monotonic-stack-problems/
+
 Thuật toán sinh kế tiếp  #29 #30
 
-Kĩ thuật Sliding Window #35
+Kĩ thuật Sliding Window #35 <done>
 
-Kĩ thuật 2 con trỏ  #36
+Kĩ thuật 2 con trỏ  #36 <maybe done>
 
 Thuật toán quay lui - Backtracking  #47
 

@@ -12,6 +12,8 @@ using namespace std;
 // NOTE: Priority_queue nhanh hơn multiset một tí
 // Khi nào sử dụng: Khi mà luôn muốn tìm đến thằng nhỏ nhất / lớn nhất trong mảng mà vị trí của nó biến thiên liên tục
 
+// NOTE 2: Có thể custom điều kiện để get thằng top() ra theo yêu cầu bài toán (giả sử thằng top() là số chẵn lớn nhất / số nguyên tố bé nhất / ...)
+
 int main(){
     // ------ Mặc định ưu tiên thằng lớn nhất ---------------------
     priority_queue<int> pq;
