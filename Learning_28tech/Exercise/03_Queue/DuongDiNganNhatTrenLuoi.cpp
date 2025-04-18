@@ -43,6 +43,7 @@ int solve(){
     // handle cho ô start
     q.push({s.first, s.second});
     d[s.first][s.second] = 0;
+    a[s.first][s.second] = 0;
 
     while (!q.empty()){
         pair<int, int> top = q.front();
@@ -61,6 +62,7 @@ int solve(){
                 // Push điểm tiếp theo vào queue
                 q.push({i1, j1});
                 d[i1][j1] = d[i][j] + 1;
+                a[i1][j1] = 0;
             }
         }
     }

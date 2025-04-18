@@ -3,15 +3,10 @@ Binary Search #20 ... <keep moving>
     https://wiki.vnoi.info/algo/basic/Binary-Search
 
 Hàm đệ quy #25 ... <done>
-
 Stack #31  .... <done>
-
 Queue #32 ... <done>
-
 Deque #33       <done>
-
 Priority Queue #34 <done>
-
 Map #16 <done>
 
 --------------------------------------------------------------------------------------
@@ -22,7 +17,7 @@ Prefix sum
 Kadane Algorithm (lưu status của phần tử phía trước rồi duyệt đến phần tử sau dựa vào status phần tử trước)
     https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 
-Monotonic Stack (Priority_queue)
+Monotonic Stack
     https://www.geeksforgeeks.org/how-to-identify-and-solve-monotonic-stack-problems/
 
 Thuật toán sinh kế tiếp  #29 #30
@@ -34,6 +29,8 @@ Kĩ thuật 2 con trỏ  #36 <maybe done>
 Thuật toán quay lui - Backtracking  #47
 
 Bài tập mảng 2 chiều #9 #11.1 #11.2 #11.3
+
+-------------------------------- Lý thuyết đồ thị ---------------------------------
 
 BFS
 
