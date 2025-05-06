@@ -33,7 +33,7 @@ void show(){
 void Try(int i){
     // Duyệt tất cả các cột mà Queen có thể được đặt trên một hàng
     for (int j = 1; j <= N; j++) {
-        if (column[j] == 1 && d1[i - j + N] == 1 && d2[i+j-1] == 1){    // Điều kiện thỏa mãn rằng ô (i,j) đó chưa bị con Hậu nào quản lý
+        if (column[j] == 1 && d1[i - j + N] == 1 && d2[i+j-1] == 1){    // Điều kiện thỏa mãn rằng ô (i,j) đó chưa bị con Hậu nào quản lý - Status
             X[i] = j;
             column[j] = d1[i - j + N] = d2[i + j - 1] = 0;      // Status 1 -> 0
             if (i == N) {

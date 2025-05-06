@@ -25,15 +25,17 @@ Thuật toán sinh kế tiếp  #29 #30
 Kĩ thuật Sliding Window #35 <done>
 
 Kĩ thuật 2 con trỏ  #36 <maybe done>
+    https://wiki.vnoi.info/algo/basic/two-pointers
 
-Thuật toán quay lui - Backtracking  #47
+Thuật toán quay lui - Backtracking  #47 <done>
 
-Bài tập mảng 2 chiều #9 #11.1 #11.2 #11.3
+Bài tập mảng 2 chiều #9 #11.1 #11.2 #11.3   <.......................>
 
 -------------------------------- Lý thuyết đồ thị ---------------------------------
 
-BFS
+BFS <done>
 
-DFS
+DFS <done>
 
-Quy hoạch động
+Quy hoạch động  <learning...> - so hard 
+    https://www.youtube.com/watch?v=yOMmTMAtKL4&list=PLux-_phi0Rz3xM_h4WoSo6xAAi9mdnETx&index=1
