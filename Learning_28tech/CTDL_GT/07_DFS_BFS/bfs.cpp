@@ -4,6 +4,7 @@ using namespace std;
 // BFS : Breadth First Search
 // Thuật toán tìm kiếm theo chiều rộng: Ưu tiên chiều rộng hơn là chiều sâu (các phần tử đồng cấp sẽ được duyệt trước)
 // Thuật toán sẽ tìm kiếm xung quanh để mở rộng trước khi đi xuống sâu hơn
+// -------> SỬ DỤNG CHO ĐỒ THỊ KHÔNG CÓ TRỌNG SỐ
 
 // BFS(u){
 //     // Step 1: Khởi tạo

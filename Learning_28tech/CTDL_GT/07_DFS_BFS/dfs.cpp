@@ -3,6 +3,7 @@ using namespace std;
 
 // DFS : Depth First Search
 // Thuật toán tìm kiếm theo chiều sâu: Ưu tiên duyệt xuống sâu nhất có thể trong 1 nhánh trước rồi mới quay lại
+// -------> SỬ DỤNG CHO ĐỒ THỊ KHÔNG CÓ TRỌNG SỐ
 
 // DFS(u){
 //     < Thẩm định u >

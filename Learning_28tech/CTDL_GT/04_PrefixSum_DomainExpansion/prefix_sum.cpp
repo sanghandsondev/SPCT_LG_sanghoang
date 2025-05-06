@@ -4,8 +4,11 @@ using namespace std;
 #define ull long long
 #define mod 1000000007
 
-// NOTE: Prefix sum rất hay thường được ứng dụng để giải bài toán liên quan đến Đệ quy hoặc ngược lại
-// NOTE: Liên quan đến lưu status hiện tại / trước đó cho việc quay lui / thỏa mãn điều kiện
+// NOTE 1: Prefix sum rất hay thường được ứng dụng để giải bài toán liên quan đến Đệ quy hoặc ngược lại
+// NOTE 1: Liên quan đến lưu status hiện tại / trước đó cho việc quay lui / thỏa mãn điều kiện
+
+// NOTE 2: Áp dụng sử dụng trong các bài toán mảng 2 chiều với tìm kiếm ma trận con / đường đi MIN/MAX thỏa mãn nhiều điều kiện nào đó
+// NOTE 2: Những bài toán này với hướng đi cố định như đường chéo / lên xuống thì xác định prefix sum sẽ rất dễ dàng
 
 // ------------------- Pre-sum: Mảng cộng dồn trên mảng một chiều -----------------------------
 // Mảng pre[] là mảng cộng dồn của A[], khi pre[i] = A[0] + A[1] + ... A[i]

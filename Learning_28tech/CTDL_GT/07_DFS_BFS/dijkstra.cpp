@@ -2,7 +2,7 @@
 using namespace std;
 using ll = long long;
 
-// Thuật toán Dijkstra: Tìm đường đi ngắn nhất từ 1 đỉnh S tới mọi đỉnh còn lại trên đồ thị
+// Thuật toán Dijkstra: Tìm đường đi ngắn nhất từ 1 đỉnh S tới mọi đỉnh còn lại trên đồ thị (có trọng số)
 // Start ---> ... ---> u ---> v
 // CÔNG THỨC: d[v] = min(d[v], d[u] + len(u,v))
 // -------- Step coding ---------
