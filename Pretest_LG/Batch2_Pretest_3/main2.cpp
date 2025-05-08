@@ -24,23 +24,11 @@ void solve(){
         }
     }
     cin >> H >> W;
-    // for(int r = 1; r <= M; r++) {
-    //     for (int c = 1; c <= N; c++){
-    //         cout << V[r][c] << " ";
-    //     }
-    //     cout << endl;
-    // }
     for(int r = 1; r <= M; r++) {
         for (int c = 1; c <= N; c++){
             prefix[r][c] = prefix[r-1][c] + prefix[r][c-1] - prefix[r-1][c-1] + V[r][c];
         }
     }
-    // for(int r = 1; r <= M; r++) {
-    //     for (int c = 1; c <= N; c++){
-    //         cout << prefix[r][c] << " ";
-    //     }
-    //     cout << endl;
-    // }
     ull maxi = 0;
     for(int r = H; r <= M; r++) {
         for (int c = W; c <= N; c++){

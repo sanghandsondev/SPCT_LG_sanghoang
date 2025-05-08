@@ -6,7 +6,7 @@ using namespace std;
 #define mod 1000000007
 
 // BÀI TOÁN: Giả sử giá trị của một ma trận là hiệu giữa tổng các số trên đường chéo chính và tổng các số trên đường chéo phụ
-// Cho ma trận A [N][N], hãy tìm ma trận con của A sao cho ma trận con đó có giá trị lớn nhất
+// Cho ma trận A [N][N], hãy tìm ma trận con của A sao cho ma trận con đó có giá trị lớn nhất (tất nhiên ma trận con là vuông)
 // --- Input 
 // 4
 // 9 -2 -8 0
@@ -36,7 +36,7 @@ void solve(){
             if (i == 0 || j == 0) {
                 dcchinh[i][j] = a[i][j];
             } else {
-                dcchinh[i][j] = a[i][j] + dcchinh[i-1][j-1];    // Prefix sum
+                dcchinh[i][j] = a[i][j] + dcchinh[i-1][j-1];    // Prefix sum - DP
             }
         }
     }
@@ -45,7 +45,7 @@ void solve(){
             if (i == 0 || j == n-1) {
                 dcphu[i][j] = a[i][j];
             } else {
-                dcphu[i][j] = a[i][j] + dcphu[i-1][j+1];    // Prefix sum
+                dcphu[i][j] = a[i][j] + dcphu[i-1][j+1];    // Prefix sum - DP
             }
         }
     }
@@ -63,7 +63,6 @@ void solve(){
         }
     }
     cout << ans;
-
 }
 
 int main(){

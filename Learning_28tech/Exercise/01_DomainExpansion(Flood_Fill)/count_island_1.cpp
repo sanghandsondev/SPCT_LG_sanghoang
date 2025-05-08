@@ -29,15 +29,14 @@ void input(){
     }
 }
 // ----- Sử dụng đệ quy. Nguyên tắc đệ quy: luôn có điểm dừng ---------
-void domain_expansion(int i, int j){
+void dfs(int i, int j){
     // Đánh dấu là điểm này đã đi qua (đã xét). NOTE: mỗi điểm 1 chỉ có thể thuộc 1 miền duy nhất
     a[i][j] = 0;
     for (int k = 0; k < 4; k++){
-        int i1 = i + dx[k], j1 = j + dy[k];
-        if (i1 >= 0 && i1 < n && j1 >= 0 && j1 < m) {
-            if (a[i1][j1] == 1) {
-                domain_expansion(i1, j1);
-            }
+        int i1 = i + dx[k];
+        int j1 = j + dy[k];
+        if (i1 >= 0 && i1 < n && j1 >= 0 && j1 < m && a[i1][j1] == 1) {
+            dfs(i1, j1);
         }
     }
 }
@@ -51,7 +50,7 @@ int main(){
             // Xét thấy điểm hiện tại là 1 -> loang ra xung quanh để gán các điểm chung miền với điểm hiện tại = 0
             if (a[i][j] == 1) {
                 count++;
-                domain_expansion(i,j);
+                dfs(i,j);
             }
         }
     }
