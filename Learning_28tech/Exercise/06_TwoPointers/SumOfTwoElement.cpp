@@ -2,7 +2,7 @@
 using namespace std;
 
 // BÀI TOÁN: Cho một mảng số ng uyên a có n phần tử: a[n], mảng này được sắp xếp tăng dần
-// Hãy tìm hai vị trí khác nhau bất kyuf sao cho tổng của hai phần tử ở hai vị trí đó có giá trị là X
+// Hãy tìm hai vị trí khác nhau bất kỳ sao cho tổng của hai phần tử ở hai vị trí đó có giá trị là X
 // Ví dụ: a  = [2,5,6,8,10,12,15], X = 16
 // left = 0, right = 6
 // a[0] + a[6] = 2 + 15 = 17 > 16, mà a[6] + a[i] > a[6] + a[0] = 17 > 16 nên không quan tâm a[6] nữa ===> right = 5

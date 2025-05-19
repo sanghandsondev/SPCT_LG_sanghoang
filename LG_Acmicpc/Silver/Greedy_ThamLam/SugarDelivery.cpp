@@ -7,15 +7,10 @@ using namespace std;
 #define ull long long
 #define mod 1000000007
 
-// Ông kia đang giao hàng đường cho một nhà máy. Ông kia cần giao chính xác N kg đường cho một cửa hàng kẹo
-// Đường được để trong gói trong túi. Có 2 loại túi là 3kg và 5kg
-// Ông kia muốn mang ít túi nhất có thể. 18kg = 3kg * 1 + 5kg * 3
-// Output là số túi ít nhất cần mang
-
 // 11kg = 3kg * 2 + 5kg * 1
 // 18kg = 3kg * 1 + 5kg * 3
 
-// ----> Thuật toán tham lam: Ưu tiên thằng túi 5kg
+// ----> THUẬT TOÁN THAM LAM: Ưu tiên thằng túi 5kg
     
 int n;
 

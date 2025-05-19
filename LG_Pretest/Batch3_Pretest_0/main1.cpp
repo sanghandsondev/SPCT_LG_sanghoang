@@ -1,5 +1,7 @@
 //https://www.hackerrank.com/contests/spct2025batch-3-pretest-practice/challenges
 
+// ---- SOLVE: Xài Backtracking để tìm tất cả các cách đặt quân hậu trên bàn cờ N*N ----
+
 #include <bits/stdc++.h>
 using namespace std;
 
