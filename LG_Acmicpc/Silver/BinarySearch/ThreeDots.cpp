@@ -31,7 +31,7 @@ void solve(){
         cin >> a[i];
     }
     sort(a, a + n);
-    // Duyet trau
+    // --
     int cnt = 0;
     for(int i = 0; i < n - 2; i++){     // Point 1
         for(int j = i + 1; j < n - 1; j++){     // Point 2

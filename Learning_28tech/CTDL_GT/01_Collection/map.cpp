@@ -12,7 +12,7 @@ using ll = long long;
 // count(), find()
 
 
-// -- NOTE: ứng dụng để lưu tần suất xuất hiện của một phần tử nào đó trong mảng (1D/2D) / xâu.
+// -- NOTE: ứng dụng để lưu tần suất xuất hiện của một phần tử nào đó trong mảng (1D/2D) / xâu và có quan tâm đến THỨ TỰ
 
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);

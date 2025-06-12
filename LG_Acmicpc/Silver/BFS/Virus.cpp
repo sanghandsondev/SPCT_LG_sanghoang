@@ -1,12 +1,14 @@
 // https://www.acmicpc.net/problem/2606
 
+// Bài toán này là FloodFill nên hoàn toàn có thể sử dụng DFS
+
 #include <bits/stdc++.h>
 #include <algorithm>
 using namespace std;
 
 #define ull long long
 #define mod 1000000007
-
+ 
 int n, k;
 vector<int> adj[1001];
 bool visited[101];

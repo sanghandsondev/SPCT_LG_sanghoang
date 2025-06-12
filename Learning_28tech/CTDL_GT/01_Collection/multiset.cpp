@@ -34,7 +34,7 @@ int main(){
     cout << distance(se.begin(), it) << endl;
 
     cout << se.count(2) << endl;
-    // ---------- Erase() -----------------------
+    // ---------------------------------
     se.erase(2);    // 1 1 1 3 4 : xoa het cac phan tu co gia tri la 2
     for (auto x : se){
         cout << x << " ";

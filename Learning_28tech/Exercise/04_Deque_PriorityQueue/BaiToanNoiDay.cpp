@@ -12,7 +12,7 @@ using namespace std;
 //                   nếu chọn (2+3)+10 thì chi phí sẽ là (2+3) + (5 + 10) = 20
 //                và nếu chọn (3+10)+2 thì chi phí sẽ là (3+10) + (13 + 2) = 28
 
-// Cách 1: (Có thể sử dụng multiset hoặc sort vector bình thường) ---> Qá lâu, phải sort lại mỗi lần tính toán ra sợi dây mới
+// Cách 1: (Có thể sử dụng multiset hoặc sort vector bình thường)
 // Cách 2: sử dụng priority queue với top() là nhỏ nhất --> nhanh hơn
 
 int solve1(){
