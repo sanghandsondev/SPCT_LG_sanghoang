@@ -10,8 +10,8 @@
 using namespace std;
 
 using pii = pair<int, pair<int,int>>;  // {current_cost, {point_x, point_y}}
-int dx[] = {-1, 1, 0, 0}; 
-int dy[] = {0, 0, -1, 1}; 
+int dx[4] = {-1, 1, 0, 0}; 
+int dy[4] = {0, 0, -1, 1}; 
 
 int n, m, sx, sy, ex, ey;
 int cost[10][10];

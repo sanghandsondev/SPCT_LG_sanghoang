@@ -21,11 +21,11 @@ void input(){
 }
 
 void dijkstra(int start){
-    vector<int> res(V+1, INT_MAX);
-    res[start] = 0;
+    vector<int> dist(V+1, INT_MAX);
+    dist[start] = 0;
     // vector<bool> visited(V+1, false);
     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
-    pq.push({res[start], start});
+    pq.push({dist[start], start});
     
     while(!pq.empty()){
         pair<int,int> tmp = pq.top(); pq.pop();
@@ -35,7 +35,7 @@ void dijkstra(int start){
         // ------ Check condition -----------------
         // if (visited[p]) continue;
         // visited[p] = true;
-        if (weight_p > res[p]) continue;
+        if (weight_p > dist[p]) continue;
         
         // ------ Check next move -----------------
         for(auto it : a[p]) {
@@ -43,15 +43,15 @@ void dijkstra(int start){
             int next_weight = it.second;
             int new_weight = weight_p + next_weight;
             // ---- If current weight is less than weight of next_point -> push
-            if (new_weight < res[next_p]){
-                res[next_p] = new_weight;
+            if (new_weight < dist[next_p]){
+                dist[next_p] = new_weight;
                 pq.push({new_weight, next_p});
             }
         }
     }
     for(int i = 1; i <= V; i++){
-        if (res[i] == INT_MAX) cout << "INF" << endl;
-        else cout << res[i] << endl;
+        if (dist[i] == INT_MAX) cout << "INF" << endl;
+        else cout << dist[i] << endl;
     }
 }
 
