@@ -2,17 +2,16 @@
 #include <algorithm>
 using namespace std;
 #define ull long long
+using pii = pair<int, pair<int,int>>;
 
-// =================== Priority_Queue == Tính chất có vẻ khá giống với multiset ===================================
+// =================== Priority_Queue  ===================================
 // top() -> truy cập phần tử ở đầu, mặc định là lớn nhất
 // pop() -> xóa phần tử ở đầu (phần tử lớn nhất hiện tại trong queue)
 // push()
 // size(), empty()
 
-// NOTE: Priority_queue nhanh hơn multiset một tí
 // Khi nào sử dụng: Khi mà luôn muốn tìm đến thằng nhỏ nhất / lớn nhất trong mảng mà vị trí của nó biến thiên liên tục
-
-// NOTE 2: Có thể custom điều kiện để get thằng top() ra theo yêu cầu bài toán (giả sử thằng top() là số chẵn lớn nhất / số nguyên tố bé nhất / ...)
+// NOTE: Có thể custom điều kiện để get thằng top() ra theo yêu cầu bài toán (giả sử thằng top() là số chẵn lớn nhất / số nguyên tố bé nhất / ...)
 
 int main(){
     // ------ Mặc định ưu tiên thằng lớn nhất ---------------------
@@ -28,10 +27,11 @@ int main(){
     cout << pq.top() << endl;  // 100
 
     pq.pop();  // xóa 100
-    cout << pq.top() << endl;  // 309
+    cout << pq.top() << endl;  // 30
 
     // ------ Chuyển sang ưu tiên get ra thằng nhỏ nhất ------------
     priority_queue<int, vector<int>, greater<int>> pq2;
+    priority_queue<pii, vector<pii>, greater<pii>> pq3;
     pq2.push(1);
     pq2.push(4);
     pq2.push(3);

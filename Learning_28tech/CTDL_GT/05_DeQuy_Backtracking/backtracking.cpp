@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Gỉa sử cấu hình cần xây dựng có dạng (X1, X2, ... Xn) ----> Kết quả in ra là một dãy thỏa mãn (Ví dụ: đường đi ma trận,...)
+// Giả sử cấu hình cần xây dựng có dạng (X1, X2, ... Xn) ----> Kết quả in ra là một dãy thỏa mãn (Ví dụ: đường đi ma trận,...)
+// ĐỘ PHỨC TẠP của backtracking gần như là bằng duyệt trâu
 //
 // Mô hình thuật toán quay lui:
 // Try(int i){

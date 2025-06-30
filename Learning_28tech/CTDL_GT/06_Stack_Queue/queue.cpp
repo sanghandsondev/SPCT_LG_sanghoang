@@ -7,8 +7,8 @@ using namespace std;
 // push(), pop()
 // front(), empty(), size()
 
-// NOTE: giải các bài toán liên quan đến BFS (tìm đường đi ngắn nhất blabla), các bài toán mà vẽ yêu cầu bài toán ra dạng tree nhị phân được
-// Hoặc là các dạng bài từ số A -> số B
+// NOTE: giải các bài toán liên quan đến BFS (tìm đường đi ngắn nhất blabla)
+// Hoặc là các dạng bài từ số A biến thành số B thông qua các phép tính (cách)
 
 int main(){
     queue<int> q;
@@ -20,6 +20,15 @@ int main(){
     cout << q.size() << endl;       // 4
     q.pop();    // pop front element ra khỏi queue
     cout << q.front() << endl;      // 2
+
+    // -------------------
+    queue<pair<int,int>> qe;
+    qe.push({1,2});
+    qe.push({2,3});
+    pair<int,int> tmp = qe.front(); qe.pop();
+    int fir = tmp.first;
+    int sec = tmp.second;
+    cout << fir << " " << sec << endl;
 
     return 0;
 }

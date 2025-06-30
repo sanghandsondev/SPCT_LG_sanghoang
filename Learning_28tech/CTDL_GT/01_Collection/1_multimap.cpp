@@ -3,11 +3,11 @@
 using namespace std;
 using ll = long long;
 
-// --------------- multimap <pair<key, value>> ---------------------
-// -- 1 key có thể lưu nhiều value khác nhau
-// -- các key vẫn sắp xếp theo thứ tự tăng dần (khá giống multiset)
+// multimap <key, value> ---
+// --> 1 key có thể lưu nhiều value khác nhau
+// --> các key vẫn sắp xếp theo thứ tự tăng dần (khá giống multiset)
+// WARN: KHÔNG CHO PHÉP sử dụng gán mp[i] = j trực tiếp như map<>
 
-// -- không cho phép sử dụng gán mp[i] = j trực tiếp
 // insert({key, value})
 // size()
 // begin(), end(), rbegin(), rend()
@@ -37,7 +37,7 @@ int main(){
     mp.erase(1);    // xóa hết phần tử có key = 1
     cout << mp.count(1) << endl;    // output: 0
 
-    auto it2 = mp.find(2);
+    auto it2 = mp.find(2);  // --> FIRST TO COME
     mp.erase(it2);  // xóa phần tử có key = 2 (First to come => xóa {2, 200})
     cout << mp.count(2) << endl;    // output: 1
 

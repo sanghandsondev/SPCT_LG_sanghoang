@@ -9,7 +9,8 @@ using namespace std;
 // Ví dụ: [i-1, j-1]   [i-1, j]   [i-1, j+1]
 //        [i,   j-1]   [i,   j]   [i,   j+1]
 //        [i+1, j-1]   [i+1, j]   [i+1, j+1]
-// Bài toán: Cho ma trận A[N,M]. Điểm được coi là cực đại trong ma trận nếu nó lớn hơn tất cả các số ở ô xung quanh mà chung đỉnh với nó
+
+// BÀI TOÁN: Cho ma trận A[N,M]. Điểm được coi là cực đại trong ma trận nếu nó lớn hơn tất cả các số ở ô xung quanh mà chung đỉnh với nó
 // Hãy đếm xong ma trận có bao nhiêu điểm cực đại
 // Input
 // 5 3
@@ -38,7 +39,8 @@ int main(){
             // check 8 ô xung quanh điểm (i,j)
             bool check = true;
             for (int k = 0; k < 8; k++){
-                int i1 = i + dx[k], j1 = j + dy[k];
+                int i1 = i + dx[k];
+                int j1 = j + dy[k];
                 // check thỏa mãn điểm xung quanh nằm trong ma trận
                 if (i1 >= 0 && i1 < n && j1 >= 0 && j1 < m) {
                     if (a[i1][j1] >= a[i][j]) {

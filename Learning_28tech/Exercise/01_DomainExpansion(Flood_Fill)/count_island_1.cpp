@@ -28,7 +28,7 @@ void input(){
         }
     }
 }
-// ----- Sử dụng đệ quy. Nguyên tắc đệ quy: luôn có điểm dừng ---------
+// ----- Sử dụng DFS. Nguyên tắc đệ quy: luôn có điểm dừng ---------
 void dfs(int i, int j){
     // Đánh dấu là điểm này đã đi qua (đã xét). NOTE: mỗi điểm 1 chỉ có thể thuộc 1 miền duy nhất
     a[i][j] = 0;

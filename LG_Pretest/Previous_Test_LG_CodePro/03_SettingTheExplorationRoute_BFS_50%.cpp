@@ -1,4 +1,5 @@
 // https://codepro.lge.com/exam/19/overseas-questions-for-previous-test/quiz/3?embed
+// MỚI ĐÚNG ĐƯỢC 1 NỬA, HIC
 #include <bits/stdc++.h>
 #include <algorithm>
 using namespace std;

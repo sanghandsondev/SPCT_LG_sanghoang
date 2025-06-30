@@ -2,13 +2,6 @@
 Binary Search #20 ... <keep moving>
     https://wiki.vnoi.info/algo/basic/Binary-Search
 
-Hàm đệ quy #25 ... <done>
-Stack #31  .... <done>
-Queue #32 ... <done>
-Deque #33       <done>
-Priority Queue #34 <done>
-Map #16 <done>
-
 --------------------------------------------------------------------------------------
 
 Prefix sum
@@ -20,21 +13,14 @@ Kadane Algorithm (lưu status của phần tử phía trước rồi duyệt đ�
 Monotonic Stack
     https://www.geeksforgeeks.org/how-to-identify-and-solve-monotonic-stack-problems/
 
-Thuật toán sinh kế tiếp  #29 #30
-
-Kĩ thuật Sliding Window #35
 
 Kĩ thuật 2 con trỏ  #36
     https://wiki.vnoi.info/algo/basic/two-pointers
 
-Thuật toán quay lui - Backtracking  #47
-
-Bài tập mảng 2 chiều #9 #11.1 #11.2 #11.3   <.....................đang làm ........................>
-
 -------------------------------- Lý thuyết đồ thị ---------------------------------
 
 BFS
-    https://wiki.vnoi.info/vi/algo/graph-theory/breadth-first-search    <.................... học thêm ........................>
+    https://wiki.vnoi.info/vi/algo/graph-theory/breadth-first-search 
 
 DFS
 

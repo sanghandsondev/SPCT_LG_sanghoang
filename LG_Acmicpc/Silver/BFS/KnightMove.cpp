@@ -36,7 +36,6 @@ int bfs(int x, int y){
                     a[i1][j1] = 1;
                     step[i1][j1] = step[i][j] + 1;
                 }
-                
             }
         }
     }

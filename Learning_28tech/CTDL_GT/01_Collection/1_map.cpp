@@ -3,23 +3,21 @@
 using namespace std;
 using ll = long long;
 
-// -------------------------- map <pair<key, value>> ---------------------
-// -- (key là duy nhất cho mỗi phần tử) + (các phần tử được tự động sắp xếp theo key tăng dần)
+// map <key, value> ----> (key là duy nhất cho mỗi phần tử) + (các phần tử được tự động sắp xếp theo key tăng dần)
 
-// insert(), erase()
 // size()
 // begin(), end(), rbegin(), rend()
+// insert(), erase()
 // count(), find()
 
-
-// -- NOTE: ứng dụng để lưu tần suất xuất hiện của một phần tử nào đó trong mảng (1D/2D) / xâu và có quan tâm đến THỨ TỰ
+// NOTE: ứng dụng để lưu tần suất xuất hiện của một phần tử nào đó trong mảng (1D/2D) / xâu và có quan tâm đến THỨ TỰ của key
 
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
     map <int, int> mp;
     mp[100] = 200;          // {100, 200}
-    mp[200] = 400;
-    mp.insert({200, 300});  // mp[200] = 300;
+    mp[200] = 400;          // {200, 400}
+    mp.insert({200, 300});  // tưng đương: mp[200] = 300; --> {200, 300}
     
     cout << mp.size() << endl;  // output:  2
     

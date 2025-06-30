@@ -4,10 +4,11 @@ using namespace std;
 
 #define ull long long
 
-// Nguyên tắc khi sử dụng ĐỆ QUY: Hàm đệ quy phải có điểm dừng
-// Dãy Fibonacci: 0 1 1 2 3 5 8 13 21 ....
-// Fn = n (n <= 1)  --> F0 = 0; F1 = 1;
-//    = Fn-1 + Fn-2  (n >= 2)
+// NGUYÊN TẮC khi sử dụng ĐỆ QUY: Hàm đệ quy phải có điểm dừng
+
+// BÀI TOÁN: Dãy Fibonacci: 0 1 1 2 3 5 8 13 21 ....
+// Fn = n            (n <= 1)  --> F0 = 0; F1 = 1;
+// Fn = Fn-1 + Fn-2  (n >= 2)  --> F2 = F1 + F0; F3 = F2 + F1; ...
 
 ull fibo(int n){
     if(n <= 1){

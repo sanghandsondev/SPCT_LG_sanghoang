@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-/* -------- Input -----------
------------------------------ */
 
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
@@ -10,10 +8,10 @@ int main(){
     // p.first = 10; p.second = 20;
     // pair<int, int> p = {10, 20};
     pair<int, int> p = make_pair(10, 20);
-    cout << p.first << ' ' << p.second << endl;
+    cout << p.first << ' ' << p.second << endl;     // 10 20
 
     pair<int, int> p1 = p;
-    cout << p1.first << ' ' << p1.second << endl;
+    cout << p1.first << ' ' << p1.second << endl;   // 10 20
 
     // pair<int, int> a[10];
     vector<pair<int, int>> v = {3, {4,5}}; // {4,5},{4,5},{4,5};

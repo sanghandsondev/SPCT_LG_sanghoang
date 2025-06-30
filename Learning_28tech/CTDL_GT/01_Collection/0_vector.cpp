@@ -2,8 +2,9 @@
 using namespace std;
 
 using ll = long long;
-// push_back(), pop_back()    ----> 1 Stack
+// push_back(), pop_back()
 // size(), clear(), empty()
+
 // begin(), end(), rbegin(), rend()
 // front(), back()
 
@@ -14,12 +15,12 @@ int main(){
     v.push_back(3);
     v.pop_back();
     //--------Loop with index ----------------------
-    cout << v.size() << endl;
+    cout << v.size() << endl;               // 4
     for (int i = 0; i < v.size(); i++){
-        cout << v[i] << ' ';
+        cout << v[i] << ' ';                // 1 1 1 2
     }
     cout << endl;
-    for (int i = v.size()-1; i >= 0; i--){
+    for (int i = v.size()-1; i >= 0; i--){  // 2 1 1 1
         cout << v[i] << ' ';
     }
     cout << endl << "----\n";
@@ -42,11 +43,11 @@ int main(){
     cout << *it << endl;
 
     for (it = v1.begin(); it != v1.end(); it++){
-        cout << *it << ' ';
+        cout << *it << ' ';             // 1 1 1 2
     }
     cout << endl;
     for (auto it2 = v1.begin(); it2 != v1.end(); it2++){
-        cout << *it2 << ' ';
+        cout << *it2 << ' ';            // 1 1 1 2
     }
     cout << endl << "----\n";
     //--------------- Do phuc tap: O(n) --------------------------------
