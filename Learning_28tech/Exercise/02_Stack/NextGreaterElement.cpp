@@ -25,7 +25,7 @@ using namespace std;
 //     }
 //     cout << endl;
 // }
-// -------------------------- Cách 2: STACK
+// -------------------------- Cách 2: STACK (Monotonic Stack)
 void solve(vector<int>& a){
     stack <int> st;
     vector<int> b(a.size());
@@ -34,7 +34,7 @@ void solve(vector<int>& a){
             st.push(i);     // push chỉ số trong trường hợp xét phần tử đầu tiên của mảng
         } else {
             while(!st.empty() && a[st.top()] < a[i]) {      // Khi stack không rỗng thì kiểm tra chỉ số
-                b[st.top()] = a[i];
+                b[st.top()] = a[i]; // cập nhật giá trị phần tử lớn hơn bên phải cho chỉ số hiện tại
                 st.pop();
             }
             st.push(i);     // push chỉ số hiện tại trong trường hợp không thỏa mãn điều kiện trên / sau khi đã pop hết những thằng thỏa mãn

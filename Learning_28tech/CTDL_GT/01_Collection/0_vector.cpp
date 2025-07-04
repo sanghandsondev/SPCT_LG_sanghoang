@@ -8,9 +8,19 @@ using ll = long long;
 // begin(), end(), rbegin(), rend()
 // front(), back()
 
+int n, m;
+vector<int> vec;
+vector<vector<int>> vector2D; // Khởi tạo vector 2 chiều
+
+
 int main(){
-    // vector <int> v;
-    vector <int> v(3, 1); // {1, 1, 1}
+    cin >> n >> m;
+    vec.assign(n, 0); // Khởi tạo vector 'vec' với n phần tử, mỗi phần tử có giá trị là 0
+    vector2D.assign(m, vector<int>(n, 0));  // m hàng và n cột, mỗi phần tử có giá trị là 0
+    // Tương đương với vector<vector<int>> vector2D(m, vector<int>(n, 0));
+
+    // vector<int> v;
+    vector<int> v(3, 1); // {1, 1, 1}
     v.push_back(2);
     v.push_back(3);
     v.pop_back();
