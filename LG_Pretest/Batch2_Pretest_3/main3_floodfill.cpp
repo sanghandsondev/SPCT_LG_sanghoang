@@ -47,12 +47,6 @@ void solve(){
         cin >> C[i];
         res[i] = 0;
     }
-    // for (int i = 0; i < M; i++) {
-    //     for (int j = 0; j < N; j++){
-    //         cout << V[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
     // DFS
     for (int i = 0; i < K; i++) {
         reset();
