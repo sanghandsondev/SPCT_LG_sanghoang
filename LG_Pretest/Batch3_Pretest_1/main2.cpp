@@ -7,9 +7,9 @@ using namespace std;
 
 int t, k;
 string flagS;
-bool red[10003];
-bool green[10003];
-bool blue[10003];
+bool red[100003];
+bool green[100003];
+bool blue[100003];
 
 void solve(){
     cin >> k;

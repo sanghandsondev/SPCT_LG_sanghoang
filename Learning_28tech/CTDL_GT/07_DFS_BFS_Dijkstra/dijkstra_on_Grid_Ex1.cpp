@@ -32,11 +32,11 @@ int dijkstra(){
         int cur_cost = tp.first;
         int x = tp.second.first;
         int y = tp.second.second;
-        // If the end point
-        if (x == ex && y == ey) {
-            return cur_cost;
-        }
-        // Các hướng đi có thể ---
+        
+        if (x == ex && y == ey) return cur_cost;
+
+        if (cur_cost > dist[x][y]) continue;        // important
+
         for(int i = 0; i < 4; i++){
             int nx = x + dx[i];
             int ny = y + dy[i];
