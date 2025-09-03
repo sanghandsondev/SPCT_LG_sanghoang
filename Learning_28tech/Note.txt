@@ -3,3 +3,28 @@ Kadane Algorithm (lưu status của phần tử phía trước rồi duyệt đ�
 
 Quy hoạch động  <learning...> - so hard 
     https://www.youtube.com/watch?v=yOMmTMAtKL4&list=PLux-_phi0Rz3xM_h4WoSo6xAAi9mdnETx&index=1
+
+Review for SPCT:
+1. Collection
+    vector<>
+    set<>
+    map<,>
+    unordered_map<,>
+STL collection:
+    stack<>
+    deque<>
+    queue<>
+    priority_queue<>
+
+2. sort() & lower_bound + upper_bound after sort()
+3. BinarySearch(l,r) in Input range or Output range
+4. Prefix 1D & 2D array (Preprocess)
+5. Bitwise
+6. FloodFill using BFS
+7. BFS shortest path (Node & Grid) from point A -> point B
+------- Pending: 07_DFS_BFS_Dijkstra ------
+8. Dijkstra
+9. SlidingWindow
+10. Two pointers
+11. Backtracking (DFS)
+12. Handle in Matrix 2D

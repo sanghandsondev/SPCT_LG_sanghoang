@@ -38,7 +38,8 @@ int main(){
         mask |= (1 << bitPos);      // bật bit ở vị trí bitPos
     }
 
-    cout << mask << endl;           // in giá trị int của bitmask: 00111010 = 58 (được bật các bit thứ 1, 3, 4, 5)
+    cout << mask << endl;           // in giá trị int của bitmask: 00111010 = 58 
+                                    // (được bật các bit thứ 1, 3, 4, 5 từ phải sang trái, bắt đầu từ bit thứ 0)
 
     // -- Input 2: (cho luông mảng nhị phân)
     vector<int> bits = {0, 0, 1, 0, 0, 1, 1};   // MSB-first (Most Significant Bit trước) -> '0010011'
@@ -51,7 +52,7 @@ int main(){
     }
     mask = 0;
     for (int i = 0; i < m; i++) {
-        mask = (mask << 1) | bits[i];         // Cách 2: Cũng rất hay
+        mask = (mask << 1) | bits[i];         // Cách 2: Advance -> rất hay
     }
 
 

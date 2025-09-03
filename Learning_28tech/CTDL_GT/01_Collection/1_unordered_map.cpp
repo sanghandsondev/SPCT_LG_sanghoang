@@ -7,10 +7,10 @@ using ll = long long;
 
 // begin(), end(), rbegin(), rend()
 // size()
-// insert()
-// erase()
-// count()
-// find()
+// insert({key, value})
+// erase(key)
+// count(key)
+// find(key)
 
 // -- NOTE: ứng dụng để lưu tần suất xuất hiện của một phần tử nào đó trong mảng (1D/2D) / xâu mà không quan tâm THỨ TỰ của key
 
