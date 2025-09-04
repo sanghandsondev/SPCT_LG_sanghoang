@@ -14,7 +14,7 @@ int dijkstra(int start, int end){
     vector<int> cost(N+1, INT_MAX);
     cost[start] = 0;
     
-    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
+    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;    // {cost, point}
     pq.push({cost[start], start});
     
     while(!pq.empty()){

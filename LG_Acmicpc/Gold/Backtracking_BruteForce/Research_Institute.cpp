@@ -60,13 +60,13 @@ void buildWalls(int count, int idx) {
         return;
     }
 
-    for (int i = idx; i < emptyCells.size(); ++i) {
+    for (int i = idx; i < emptyCells.size(); ++i) { // Khác với hoán vị thì thằng này giống như tổ hợp
         pair<int,int> tmp = emptyCells[i];
         int y = tmp.first;
         int x = tmp.second;
-        lab[y][x] = 1;
+        lab[y][x] = 1;  // Fill wall
         buildWalls(count + 1, i + 1);
-        lab[y][x] = 0;
+        lab[y][x] = 0;  // Remove wall (backtrack)
     }
 }
 
@@ -79,7 +79,7 @@ int main() {
             else if (lab[i][j] == 2) virusCells.push_back({i, j});
         }
 
-    buildWalls(0, 0);   // backtracking for search exactly '3' empty_cell
+    buildWalls(0, 0);   // backtracking for search exactly '3' empty_cell (Chọn bất kì 3 ô trống trong số các ô trống có thể - Brute Force)
     cout << maxSafeArea << endl;
     return 0;
 }

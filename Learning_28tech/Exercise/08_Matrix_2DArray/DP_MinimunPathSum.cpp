@@ -9,7 +9,7 @@ using namespace std;
 // Bạn chỉ được di chuyển xuống dưới / sang phải
 
 // ----- Solution(DP-Prefix Sum): 
-// Với bài toán các hướng đi là cố định thì không cần xài tới Dijkstra làm gì cho phức tạp
+// Với bài toán các hướng đi là cố định thì không cần xài tới BFS làm gì cho phức tạp
 
 // Sử dụng một mảng dp[i][j] để lưu tổng nhỏ nhất từ ô (1,1) đến ô (i,j)
 // dp[i][j] = matrix[i][j] + min(dp[i-1][j], dp[i][j-1]);   ----> 1 dạng kiểu Prefix Sum

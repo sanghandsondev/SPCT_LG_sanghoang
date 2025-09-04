@@ -22,7 +22,6 @@ STL collection:
 5. Bitwise
 6. FloodFill using BFS
 7. BFS shortest path (Node & Grid) from point A -> point B
-------- Pending: 07_DFS_BFS_Dijkstra ------
 8. Dijkstra
 9. SlidingWindow
 10. Two pointers
