@@ -46,10 +46,10 @@ int main() {
     while(!q.empty()){
         auto [x,y] = q.front(); q.pop();
         // no stop point (no target)
+        result = max(dist[x][y], result);       // Cập nhật số ngày đã đi qua (số step tối đa)
         for(int k = 0; k < 4; k++){
             int nx = x + dx[k];
-            int ny = y + dy[k];
-            result = max(dist[x][y], result);       // Cập nhật số ngày đã đi qua (số step tối đa)
+            int ny = y + dy[k]; 
             int new_dist = dist[x][y] + 1;
             if(nx >= 0 && nx < n && ny >= 0 && ny < m && farm[nx][ny] == 0){    // Chỉ xét ô có cà chua chưa ripe
                 if (dist[nx][ny] == INT_MAX){       // Case 1: Ô chưa được duyệt

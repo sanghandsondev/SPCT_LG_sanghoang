@@ -71,7 +71,7 @@ void bfs(int u){
 }
 
 int main(){
-    int();
+    inp();
     bfs(1);
     return 0;
 }

@@ -5,7 +5,7 @@ using namespace std;
 
 // Example: Explosive string
 // [12ab]:  '12ab'112ab2ab -> 1'12ab'2ab -> '12ab' -> FRULA
-//  0123     0123 00123123 
+//  0123     0123 00123123    0 0123 123 
     
 // [C4]:    m i r k o v C 4  n i z C C 4 4 -> mirkovniz'C4' -> mirkovniz
 //  01     -1-1-1-1-1-1 0 1 -1-1-1 0 0 1 1
@@ -21,7 +21,7 @@ int main(){
         if (st.empty()) {
             int pos = -1;
             if (s[i] == expl_s[0]) pos = 0;
-            if(pos+1 < len2) {
+            if(pos+1 < len2) {      // Corner case: ExplosiveString chỉ là 1 kí tự thì không cần phải push
                 st.push_back({s[i], pos});
             }
         } else {
